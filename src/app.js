@@ -14,6 +14,7 @@ app.use('/', routes)
 app.use(cors({
     origin: 'https://mcu.lymancomedika.com',
     methods: 'GET, POST, OPTIONS',  // Pastikan OPTIONS juga diizinkan
+    allowedHeaders: ['Content-Type', 'Authorization', 'x-api-key'],  // Tambahkan x-api-key di sini
     credentials: true,  // Jika Anda menggunakan cookies atau header autentikasi
 }));
 
