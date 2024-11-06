@@ -17,3 +17,9 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
+
+root@Server-Email:/opt/mailcow-dockerized# docker network connect whatsapp-api_default mailcowdockerized-nginx-mailcow-1
+root@Server-Email:/opt/mailcow-dockerized# docker network connect mailcowdockerized_mailcow-network whatsapp_web_api
+root@Server-Email:/opt/mailcow-dockerized# docker exec -it mailcowdockerized-nginx-mailcow-1 ping whatsapp_web_api
+
+https://chatgpt.com/share/672ae690-865c-800a-a252-c93c9e8e27a3
